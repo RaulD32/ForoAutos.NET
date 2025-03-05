@@ -1,5 +1,9 @@
 @model Bibloteca.Models.Domain.Marca
 
+@{
+    Layout = "_LayoutDashboard";
+}
+
 <h2>Editar Marca</h2>
 <form asp-action="Editar" method="post">
     <input type="hidden" asp-for="Id" />
