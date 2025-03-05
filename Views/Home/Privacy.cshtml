@@ -1,6 +1,76 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Nosotros";
 }
-<h1>@ViewData["Title"]</h1>
+<div class="container py-5">
+    <!-- Título principal -->
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    <!-- Introducción -->
+    <div class="text-center mb-5">
+        <p class="lead">
+            Bienvenido a <strong>Autech Foro</strong>, el espacio donde los amantes de los autos se reúnen para compartir, aprender y vivir la pasión por el automovilismo.
+        </p>
+    </div>
+
+    <!-- Sección con imágenes y texto -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 text-center">
+            <img src="~/images/Comunidad.png" class="img-fluid rounded shadow-lg" alt="Comunidad de autos">
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-primary">Nuestra Historia</h2>
+            <p>
+                Fundado en 2023, <strong>Autech Foro</strong> nació con la misión de crear una comunidad vibrante donde entusiastas del mundo automotor puedan intercambiar ideas,
+                resolver dudas y conocer a personas con la misma pasión por los coches.
+            </p>
+            <p>
+                Aquí encontrarás desde aficionados a los autos clásicos, hasta expertos en tuning y mecánica. Somos más que un foro, somos una familia de amantes de la velocidad.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards en dos columnas -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-primary"><i class="bi bi-chat-dots"></i> ¿Qué ofrecemos?</h2>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-gear-fill text-primary"></i> <strong>Consejos mecánicos:</strong> Aprende sobre mantenimiento y reparaciones.</li>
+                        <li><i class="bi bi-speedometer text-primary"></i> <strong>Tuning y rendimiento:</strong> Comparte modificaciones y mejoras.</li>
+                        <li><i class="bi bi-calendar-event text-primary"></i> <strong>Eventos y reuniones:</strong> Participa en encuentros con otros miembros.</li>
+                        <li><i class="bi bi-newspaper text-primary"></i> <strong>Noticias automotrices:</strong> Mantente al día con las últimas tendencias.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-primary"><i class="bi bi-car-front"></i> Categorías del Foro</h2>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-wrench text-primary"></i> <strong>Mecánica y mantenimiento:</strong> Diagnósticos, consejos y reparaciones.</li>
+                        <li><i class="bi bi-lightning-fill text-primary"></i> <strong>Modificaciones y tuning:</strong> Mejoras de rendimiento y estética.</li>
+                        <li><i class="bi bi-trophy text-primary"></i> <strong>Deportivos y superautos:</strong> Información sobre los autos más potentes.</li>
+                        <li><i class="bi bi-globe text-primary"></i> <strong>Noticias y tendencias:</strong> Lo último del mundo automotor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de comunidad -->
+    <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+            <h2 class="text-primary">Únete a la Comunidad</h2>
+            <p>
+                Si los autos son tu pasión, este es tu lugar. Forma parte de una comunidad donde la velocidad, la innovación y la adrenalina son nuestro idioma en común.
+            </p>
+            
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="~/images/Meet.png" class="img-fluid rounded shadow-lg" alt="Evento de autos">
+        </div>
+    </div>
+</div>

@@ -1,8 +1,61 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Foro de Autos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container text-center mt-4">
+    <h1 class="display-4">Bienvenido al Foro de Autos</h1>
+    <p>Únete a la comunidad y comparte tu pasión por los autos.</p>
+
+    <!-- Sección de categorías -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/deportivos.jpg" class="card-img-top" alt="Autos deportivos">
+                <div class="card-body">
+                    <h5 class="card-title">Autos Deportivos</h5>
+                    <p class="card-text">Discute sobre los mejores modelos de autos deportivos.</p>
+                    <a href="#" class="btn btn-primary">Ver temas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/clasicos.jpg" class="card-img-top" alt="Autos clásicos">
+                <div class="card-body">
+                    <h5 class="card-title">Autos Clásicos</h5>
+                    <p class="card-text">Comparte historias y restauraciones de autos clásicos.</p>
+                    <a href="#" class="btn btn-primary">Ver temas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/todoterreno.jpg" class="card-img-top" alt="Autos todoterreno">
+                <div class="card-body">
+                    <h5 class="card-title">Todoterreno</h5>
+                    <p class="card-text">Explora el mundo del off-road y los 4x4.</p>
+                    <a href="#" class="btn btn-primary">Ver temas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería de autos -->
+    <div class="mt-5">
+        <h2>Galería de Autos</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/auto1.jpg" class="img-fluid rounded" alt="Auto 1">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/auto2.jpg" class="img-fluid rounded" alt="Auto 2">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/auto3.jpg" class="img-fluid rounded" alt="Auto 3">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/auto4.jpg" class="img-fluid rounded" alt="Auto 4">
+            </div>
+        </div>
+    </div>
 </div>
