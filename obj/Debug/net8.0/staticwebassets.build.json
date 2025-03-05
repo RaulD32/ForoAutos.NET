@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6H7Yx5JUXwhXGXMDWhszmzM14xcSlUH3wpKrFGwDHMc=",
+  "Hash": "INYQKMNoYL7a4Ssy6D24arQiPHWGoKZP5GNvSVk1QOo=",
   "Source": "Bibloteca",
   "BasePath": "_content/Bibloteca",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/911.png",
+      "SourceId": "Bibloteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/",
+      "BasePath": "_content/Bibloteca",
+      "RelativePath": "images/911.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/911.png"
+    },
+    {
       "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Comunidad.png",
       "SourceId": "Bibloteca",
       "SourceType": "Discovered",
@@ -131,6 +150,25 @@
       "OriginalItemSpec": "wwwroot/images/GT3.png"
     },
     {
+      "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/GT4.png",
+      "SourceId": "Bibloteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/",
+      "BasePath": "_content/Bibloteca",
+      "RelativePath": "images/GT4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/GT4.png"
+    },
+    {
       "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Meet.png",
       "SourceId": "Bibloteca",
       "SourceType": "Discovered",
@@ -148,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Meet.png"
+    },
+    {
+      "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Meet2.png",
+      "SourceId": "Bibloteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/",
+      "BasePath": "_content/Bibloteca",
+      "RelativePath": "images/Meet2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Meet2.png"
     },
     {
       "Identity": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/R8.png",

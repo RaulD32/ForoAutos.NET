@@ -2,60 +2,71 @@
     ViewData["Title"] = "Foro de Autos";
 }
 
-<div class="container text-center mt-4">
-    <h1 class="display-4">Bienvenido al Foro de Autos</h1>
-    <p>Únete a la comunidad y comparte tu pasión por los autos.</p>
+@model List<Bibloteca.Models.Domain.Noticia>
 
-    <!-- Sección de categorías -->
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/images/deportivos.jpg" class="card-img-top" alt="Autos deportivos">
-                <div class="card-body">
-                    <h5 class="card-title">Autos Deportivos</h5>
-                    <p class="card-text">Discute sobre los mejores modelos de autos deportivos.</p>
-                    <a href="#" class="btn btn-primary">Ver temas</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/images/clasicos.jpg" class="card-img-top" alt="Autos clásicos">
-                <div class="card-body">
-                    <h5 class="card-title">Autos Clásicos</h5>
-                    <p class="card-text">Comparte historias y restauraciones de autos clásicos.</p>
-                    <a href="#" class="btn btn-primary">Ver temas</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/images/todoterreno.jpg" class="card-img-top" alt="Autos todoterreno">
-                <div class="card-body">
-                    <h5 class="card-title">Todoterreno</h5>
-                    <p class="card-text">Explora el mundo del off-road y los 4x4.</p>
-                    <a href="#" class="btn btn-primary">Ver temas</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Sección de información sobre el foro -->
+<div class="mt-5">
+    <h2>Bienvenido al Foro de Autos</h2>
+    <p>En este foro encontrarás las últimas noticias sobre modelos de coches, las marcas más populares y todo lo relacionado con el mundo automovilístico. Mantente al tanto de los últimos avances en la industria automotriz.</p>
+</div>
 
-    <!-- Galería de autos -->
-    <div class="mt-5">
-        <h2>Galería de Autos</h2>
+<!-- Sección de noticias -->
+<div class="mt-5">
+    <h2>Últimas Noticias</h2>
+
+    @if (Model != null && Model.Any())
+    {
         <div class="row">
-            <div class="col-md-3">
-                <img src="/images/auto1.jpg" class="img-fluid rounded" alt="Auto 1">
-            </div>
-            <div class="col-md-3">
-                <img src="/images/auto2.jpg" class="img-fluid rounded" alt="Auto 2">
-            </div>
-            <div class="col-md-3">
-                <img src="/images/auto3.jpg" class="img-fluid rounded" alt="Auto 3">
-            </div>
-            <div class="col-md-3">
-                <img src="/images/auto4.jpg" class="img-fluid rounded" alt="Auto 4">
-            </div>
+            @foreach (var noticia in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@noticia.Titulo</h5>
+                            <p class="card-text">@noticia.Contenido</p>
+                            <p class="card-text"><small class="text-muted">Coche: @noticia.Coche?.Modelo</small></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No hay noticias disponibles.</p>
+    }
+</div>
+
+<!-- Sección de collage de imágenes -->
+<div class="mt-5">
+    <h2>Nuestras fotos favoritas</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="~/images/Comunidad.png" alt="Imagen 1" class="img-fluid mb-3 img-collage">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/GT3.png" alt="Imagen 2" class="img-fluid mb-3 img-collage">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/Meet2.png" alt="Imagen 3" class="img-fluid mb-3 img-collage">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/R8.png" alt="Imagen 4" class="img-fluid mb-3 img-collage">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/911.png" alt="Imagen 5" class="img-fluid mb-3 img-collage">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/GT4.png" alt="Imagen 6" class="img-fluid mb-3 img-collage">
         </div>
     </div>
 </div>
+
+<!-- Agregar CSS personalizado -->
+<style>
+    .img-collage {
+        height: 200px; /* Puedes ajustar la altura según lo necesites */
+        object-fit: cover; /* Asegura que la imagen se recorte adecuadamente para llenar el área */
+        width: 100%;
+    }
+</style>

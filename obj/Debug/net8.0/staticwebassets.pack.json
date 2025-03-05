@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/911.png",
+      "PackagePath": "staticwebassets/images/911.png"
+    },
+    {
       "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Comunidad.png",
       "PackagePath": "staticwebassets/images/Comunidad.png"
     },
@@ -21,8 +25,16 @@
       "PackagePath": "staticwebassets/images/GT3.png"
     },
     {
+      "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/GT4.png",
+      "PackagePath": "staticwebassets/images/GT4.png"
+    },
+    {
       "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Meet.png",
       "PackagePath": "staticwebassets/images/Meet.png"
+    },
+    {
+      "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/Meet2.png",
+      "PackagePath": "staticwebassets/images/Meet2.png"
     },
     {
       "Id": "/Users/Rdia23/BiblotecaMajo/Bibloteca/wwwroot/images/R8.png",
