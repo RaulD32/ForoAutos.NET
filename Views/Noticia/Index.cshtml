@@ -1,0 +1,48 @@
+@model List<Bibloteca.Models.Domain.Noticia>
+
+<h2>Noticias</h2>
+
+<a asp-action="Crear" class="btn btn-primary mb-3">Agregar Noticia</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Contenido</th>
+            <th>Coche</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var noticia in Model)
+        {
+            <tr>
+                <td>@noticia.Id</td>
+                <td>@noticia.Titulo</td>
+                <td>@noticia.Contenido</td>
+                <td>@noticia.Coche.Modelo</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@noticia.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <button class="btn btn-danger btn-sm" onclick="eliminarNoticia(@noticia.Id)">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function eliminarNoticia(id) {
+        if (confirm('¿Estás seguro de eliminar esta noticia?')) {
+            fetch(`/Noticia/Eliminar/${id}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.success) location.reload();
+            });
+        }
+    }
+</script>

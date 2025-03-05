@@ -1,0 +1,42 @@
+@model List<Bibloteca.Models.Domain.Coche>
+
+<h2>Lista de Coches</h2>
+<a asp-action="Crear" class="btn btn-primary">Crear Nuevo Coche</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Marca</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var coche in Model)
+        {
+            <tr>
+                <td>@coche.Modelo</td>
+                <td>@coche.Anio</td>
+                <td>@coche.Marca.Nombre</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@coche.Id" class="btn btn-warning">Editar</a>
+                    <button class="btn btn-danger" onclick="eliminarCoche(@coche.Id)">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function eliminarCoche(id) {
+        if (confirm("¿Seguro que deseas eliminar este coche?")) {
+            fetch('/Coche/Eliminar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id })
+            }).then(response => response.json())
+              .then(data => { if (data.success) location.reload(); });
+        }
+    }
+</script>

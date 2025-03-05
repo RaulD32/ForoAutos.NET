@@ -1,0 +1,19 @@
+@model Bibloteca.Models.Domain.Coche
+
+<h2>Editar Coche</h2>
+
+<form asp-action="Editar" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Modelo:</label>
+    <input asp-for="Modelo" class="form-control" required />
+
+    <label>Año:</label>
+    <input asp-for="Anio" class="form-control" required />
+
+    <label>Marca:</label>
+    <select asp-for="MarcaId" asp-items="ViewBag.Marcas" class="form-control"></select>
+
+    <button type="submit" class="btn btn-success">Actualizar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

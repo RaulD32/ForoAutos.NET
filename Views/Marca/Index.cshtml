@@ -1,0 +1,43 @@
+@model List<Bibloteca.Models.Domain.Marca>
+
+<h2>Lista de Marcas</h2>
+<a asp-action="Crear" class="btn btn-primary">Agregar Marca</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var marca in Model)
+        {
+            <tr>
+                <td>@marca.Id</td>
+                <td>@marca.Nombre</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@marca.Id" class="btn btn-warning">Editar</a>
+                    <button class="btn btn-danger" onclick="eliminarMarca(@marca.Id)">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function eliminarMarca(id) {
+        if (confirm("¿Seguro que deseas eliminar esta marca?")) {
+            fetch(`/Marca/Eliminar/${id}`, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
+                    } else {
+                        alert(data.message);
+                    }
+                });
+        }
+    }
+</script>

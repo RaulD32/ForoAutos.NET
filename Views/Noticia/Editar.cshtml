@@ -1,0 +1,27 @@
+@model Bibloteca.Models.Domain.Noticia
+
+<h2>Editar Noticia</h2>
+
+<form asp-action="Editar" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label for="Titulo" class="form-label">Título</label>
+        <input asp-for="Titulo" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Contenido" class="form-label">Contenido</label>
+        <textarea asp-for="Contenido" class="form-control" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="CocheId" class="form-label">Coche</label>
+        <select asp-for="CocheId" class="form-control" asp-items="ViewBag.Coches">
+            <option value="">Seleccione un coche</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
